@@ -1,0 +1,104 @@
+.header {
+  margin: 0 256px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+}
+@media screen and (max-width: 1349px) {
+  .header {
+    margin: 0 99px;
+  }
+}
+@media screen and (max-width: 1049px) {
+  .header {
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+.homepage {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 136px;
+}
+
+.header__menu {
+  display: flex;
+  flex-basis: 80%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (max-width: 649px) {
+  .header__menu {
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+    gap: 0;
+  }
+}
+.header__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+}
+.header__chevron {
+  width: 16px;
+}
+.header__link {
+  display: block;
+  text-decoration: none;
+  color: #00065B;
+  padding: 3px 0;
+}
+@media screen and (min-width: 899px) {
+  .header__link {
+    border-bottom: none;
+  }
+}
+.header__link:hover, .header__link:focus {
+  border-bottom: 4px solid #06EB83;
+}
+.header__link.active {
+  border-bottom: 4px solid #06EB83;
+}
+.header__services {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.otherPages {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.header__submenu {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 6, 91, 0.1019607843);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #00065B;
+}/*# sourceMappingURL=index.css.map */

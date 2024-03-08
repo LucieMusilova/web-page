@@ -1,0 +1,19 @@
+@use 'vars';
+@use 'header';
+@use 'homepage';
+@use 'logo';
+@use 'menu';
+@use 'otherPages';
+@use 'submenu';
+
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+  margin: 0;
+	padding: 0;
+  width: 100%;
+  font-family: vars.$font-family;
+	font-size: vars.$font-size;
+  color: vars.$primary-color-900;
+}

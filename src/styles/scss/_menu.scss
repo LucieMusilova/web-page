@@ -1,0 +1,58 @@
+@use "vars";
+.header {
+  &__menu {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+
+    @media screen and (max-width: 649px) {
+      flex-direction: column;
+      margin: 20px;
+      padding: 0;
+      gap: 0;
+    }
+
+  }
+
+  &__list {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &__chevron {
+    width: 16px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: vars.$primary-color-900;
+    padding: 3px 0;
+
+    @media screen and (min-width: 899px) {
+      border-bottom: none;
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 4px solid vars.$secondary-color-400;
+    }
+
+    &.active {
+      border-bottom: 4px solid vars.$secondary-color-400;
+    }
+
+  }
+
+  &__services {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
