@@ -22,6 +22,7 @@ root.render(
           <Route path="/aktuality" element={<OtherPages />} />
           <Route path="/novinky" element={<OtherPages />} />
           <Route path="/kontakty" element={<OtherPages />} />
+          <Route path="/submenu" element={<OtherPages />} />
         </Route>
       </Routes>
     </Router>

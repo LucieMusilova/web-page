@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveMenuItem } from "../../redux/slice";
 import { Link } from "react-router-dom";
@@ -18,10 +19,13 @@ const Menu = () => {
     (state: { slice: { activeMenuItem: string | null } }) =>
       state.slice.activeMenuItem
   );
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = (item: string) => {
     if (item !== "Služby") {
       dispatch(setActiveMenuItem(item));
+    } else {
+      setMenuOpen(!menuOpen)
     }
   };
 
@@ -30,7 +34,7 @@ const Menu = () => {
       {menuItems.map((item, index) => (
         <li key={index} className="header__list">
           {item === "Služby" ? (
-            <div>
+            <div className="header__services--div" onClick={() => handleClick(item)}>
               <span className="header__link header__services">
                 {item}
                 <img
@@ -39,7 +43,7 @@ const Menu = () => {
                   alt="Chevron"
                 />
               </span>
-              <Submenu />
+              <Submenu open={menuOpen} />
             </div>
           ) : (
             <Link

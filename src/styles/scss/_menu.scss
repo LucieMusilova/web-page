@@ -54,5 +54,27 @@
     display: flex;
     align-items: center;
     gap: 4px;
+
+    &:hover,
+    &:focus{
+      border-bottom: none;
+    }
+
+    @media screen and (max-width: 649px) {
+      justify-content: center;
+    }
+  }
+
+  &__services--div {
+    position: relative;
+
+    &:hover .header__submenu,
+    &:focus .header__submenu{
+      @media screen and (min-width: 650px) {
+        display: block;
+      }
+    }
+
+
   }
 }
