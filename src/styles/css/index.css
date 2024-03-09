@@ -1,5 +1,4 @@
 .app {
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -191,7 +190,11 @@
   padding: 0;
   padding-left: 15px;
   max-width: 600px;
-  margin: 0 auto;
+}
+@media screen and (max-width: 1049px) {
+  .horizontalCard__text ul {
+    margin: 0 auto;
+  }
 }
 .horizontalCard__text li {
   font-weight: 500;

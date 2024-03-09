@@ -52,7 +52,10 @@
       padding: 0;
       padding-left: 15px;
       max-width: 600px;
-      margin: 0 auto;
+
+      @media screen and (max-width: 1049px) {
+        margin: 0 auto;
+      }
     }
 
     & li {
