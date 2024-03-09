@@ -1,0 +1,10 @@
+.ham {
+  display: none;
+
+  @media screen and (max-width: 649px) {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+  }
+}

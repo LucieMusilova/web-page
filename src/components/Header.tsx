@@ -1,3 +1,4 @@
+import Ham from "./common/HamIcon";
 import Logo from "./common/Logo";
 import Menu from "./common/Menu";
 
@@ -6,6 +7,7 @@ const Header = () => {
     <header className="header">
       <Logo />
       <Menu />
+      <Ham />
     </header>
   );
 };

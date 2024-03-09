@@ -116,12 +116,25 @@
   color: #009e61;
 }
 
+.ham {
+  display: none;
+}
+@media screen and (max-width: 649px) {
+  .ham {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+  }
+}
+
 .header {
   margin: 0 256px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 104px;
+  position: relative;
 }
 @media screen and (max-width: 1349px) {
   .header {
@@ -301,6 +314,11 @@
 @media screen and (min-width: 650px) {
   .header__services--div:hover .header__submenu, .header__services--div:focus .header__submenu {
     display: block;
+  }
+}
+@media screen and (max-width: 649px) {
+  .header--close {
+    display: none;
   }
 }
 

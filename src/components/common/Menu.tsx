@@ -19,6 +19,9 @@ const Menu = () => {
     (state: { slice: { activeMenuItem: string | null } }) =>
       state.slice.activeMenuItem
   );
+  const hamMenuOpen: boolean = useSelector(
+    (state: { slice: { hamMenuOpen: boolean } }) => state.slice.hamMenuOpen
+  );
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = (item: string) => {
@@ -30,7 +33,7 @@ const Menu = () => {
   };
 
   return (
-    <ul className="header__menu">
+    <ul className={`header__menu ${hamMenuOpen ? "" : "header--close"}`}>
       {menuItems.map((item, index) => (
         <li key={index} className="header__list">
           {item === "Služby" ? (
