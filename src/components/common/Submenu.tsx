@@ -6,16 +6,12 @@ type SubmenuProps = {
 
 const Submenu = ({ open }: SubmenuProps) => {
   const submenuItems: string[] = ["Submenu", "Submenu", "Submenu", "Submenu"];
-  console.log(open)
 
   return (
     <div className={`header__submenu ${open ? "open" : ""}`}>
       {submenuItems.map((item, index) => (
         <div key={index} className="header__submenu--item">
-          <Link
-            className="header__submenu--link"
-            to={`/${item.toLowerCase()}`}
-          >
+          <Link className="header__submenu--link" to={`/${item.toLowerCase()}`}>
             <span className="header__submenu--text">{item}</span>
             <img
               className="header__submenu--arrow"

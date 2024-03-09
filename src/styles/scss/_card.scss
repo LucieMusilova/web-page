@@ -1,0 +1,21 @@
+.card {
+  max-width: 328px;
+  text-align: center;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  & h4 {
+    margin: 10px;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  &__button {
+    margin: 32px 0 0;
+  }
+}

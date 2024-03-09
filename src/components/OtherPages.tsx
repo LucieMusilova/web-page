@@ -1,4 +1,3 @@
-
 const OtherPages = () => {
   return (
     <div className="otherPages">

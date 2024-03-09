@@ -1,19 +1,54 @@
-@use 'vars';
-@use 'header';
-@use 'homepage';
-@use 'logo';
-@use 'menu';
-@use 'otherPages';
-@use 'submenu';
+@use "app";
+@use "bags";
+@use "button";
+@use "card";
+@use "footer";
+@use "header";
+@use "horizontalCard";
+@use "logo";
+@use "menu";
+@use "otherPages";
+@use "services";
+@use "submenu";
+@use "vars";
 
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
-	padding: 0;
+  padding: 0;
   width: 100%;
   font-family: vars.$font-family;
-	font-size: vars.$font-size;
+  font-size: vars.$font-size;
   color: vars.$primary-color-900;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }

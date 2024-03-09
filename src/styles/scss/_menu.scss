@@ -13,7 +13,6 @@
       padding: 0;
       gap: 0;
     }
-
   }
 
   &__list {
@@ -47,7 +46,6 @@
     &.active {
       border-bottom: 4px solid vars.$secondary-color-400;
     }
-
   }
 
   &__services {
@@ -56,7 +54,7 @@
     gap: 4px;
 
     &:hover,
-    &:focus{
+    &:focus {
       border-bottom: none;
     }
 
@@ -69,12 +67,10 @@
     position: relative;
 
     &:hover .header__submenu,
-    &:focus .header__submenu{
+    &:focus .header__submenu {
       @media screen and (min-width: 650px) {
         display: block;
       }
     }
-
-
   }
 }

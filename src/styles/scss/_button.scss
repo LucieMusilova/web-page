@@ -1,0 +1,38 @@
+@use "vars";
+.button {
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &--white {
+    border: 1px solid #e7f0ff;
+    box-shadow: 0px 3px 15px 0px #00065b1a;
+    color: vars.$secondary-color-500;
+
+    &:hover {
+      background-color: vars.$primary-color-100;
+      box-shadow: 0px 5px 15px 0px #00065b4d;
+      color: vars.$primary-color-900;
+    }
+
+    &.active {
+      background-color: vars.$primary-color-500;
+      border: 1px solid vars.$primary-color-500;
+      color: white;
+    }
+  }
+
+  &--green {
+    background-color: vars.$secondary-color-400;
+    color: vars.$primary-color-900;
+
+    &:hover {
+      background-color: vars.$secondary-color-500;
+      border-bottom: 2px solid vars.$secondary-color-600;
+    }
+  }
+}

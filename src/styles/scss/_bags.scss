@@ -1,0 +1,22 @@
+.bags {
+  padding: 0 256px 112px;
+
+  @media screen and (max-width: 1349px) {
+    padding: 0 99px 112px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
