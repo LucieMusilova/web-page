@@ -17,7 +17,7 @@ const Footer = () => {
             Třetí proklik
           </Link>
         </div>
-        <p>© 2022 Thalion All rights reserved.</p>
+        <p>© 2024 Logo All rights reserved.</p>
       </div>
     </footer>
   );

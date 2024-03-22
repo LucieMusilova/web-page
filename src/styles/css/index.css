@@ -248,7 +248,8 @@
   width: 100%;
 }
 
-.logo {
+.logo,
+.logo a img {
   width: 136px;
 }
 
